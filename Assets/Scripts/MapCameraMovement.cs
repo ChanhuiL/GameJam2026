@@ -18,14 +18,14 @@ public class MapCameraMovement : MonoBehaviour
     [SerializeField] InputActionProperty scrollAction;
 
     Vector2             vInput = Vector2.zero;
-    float               targetZoomSize;
+    float               targetZoomSize = 4f;
     bool                isFocusing = false;
 
     private void Awake()
     {
     }
 
-    void OnMove(InputValue value)   // °ªÀÌ º¯ÇÒ¶§¸¸ È£ÃâµÊ
+    void OnMove(InputValue value)   // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¶ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½
     {
         Vector2 curInput = value.Get<Vector2>();
 
@@ -55,7 +55,7 @@ public class MapCameraMovement : MonoBehaviour
     public void FocusCameraToHere(Vector2 pos)
     {
         isFocusing = true;
-        transform.position = pos;
+        transform.position = pos + Vector2.right * targetZoomSize;
     }
 
     public void UnfocusCamera()

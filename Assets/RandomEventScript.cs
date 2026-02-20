@@ -13,11 +13,7 @@ public class RandomEventScript : MonoBehaviour
         randomEventDescription.text = randomEvent.eventDescription;
         for(int i=0;i<randomEvent.DecisionResult.GetLength(0);i++)
         {
-            DecisionTexts[i].text = "이거 선택하면\n";
-            for (int j = 0; j < randomEvent.DecisionResult.GetLength(1); j++)
-            {
-                DecisionTexts[i].text += randomEvent.DecisionResult[i, j].ToString() + " ";
-            }
+            DecisionTexts[i].text = randomEvent.DecisionDescription[i];
         }
     }
 }
