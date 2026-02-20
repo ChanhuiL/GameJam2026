@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class RandomEvent
 {
@@ -37,6 +39,9 @@ public class GameHandlerScript : MonoBehaviour
     public Image moneyGauge;
     public Image approvalAGauge;
     public Image approvalBGauge;
+    private float currentMoneyGaugeValue = 0;
+    private float currentApprovalAGaugeValue = 0;
+    private float currentApprovalBGaugeValue = 0;
     public GameObject randomEventObject;
     public bool hasRandomEvent = false;
     
@@ -58,9 +63,16 @@ public class GameHandlerScript : MonoBehaviour
         approvalAText.text = approvalA.ToString();
         approvalBText.text = approvalB.ToString();
         
-        moneyGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, money), 0, 1);
-        approvalAGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalA), 0, 1);
-        approvalBGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalB), 0, 1);
+        var targetMoneyGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, money), 0, 1);
+        var targetApprovalAGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalA), 0, 1);
+        var targetApprovalBGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalB), 0, 1);
+        currentMoneyGaugeValue = Mathf.Lerp(currentMoneyGaugeValue, targetMoneyGaugeValue, 0.05f);
+        currentApprovalAGaugeValue = Mathf.Lerp(currentApprovalAGaugeValue, targetApprovalAGaugeValue, 0.05f);
+        currentApprovalBGaugeValue = Mathf.Lerp(currentApprovalBGaugeValue, targetApprovalBGaugeValue, 0.05f);
+
+        moneyGauge.fillAmount = currentMoneyGaugeValue;
+        approvalAGauge.fillAmount = currentApprovalAGaugeValue;
+        approvalBGauge.fillAmount = currentApprovalBGaugeValue;
     }
 
     public void NewRandomEvent()
