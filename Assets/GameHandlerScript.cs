@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomEvent
 {
@@ -33,6 +34,9 @@ public class GameHandlerScript : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI approvalAText;
     public TextMeshProUGUI approvalBText;
+    public Image moneyGauge;
+    public Image approvalAGauge;
+    public Image approvalBGauge;
     public GameObject randomEventObject;
     public bool hasRandomEvent = false;
     
@@ -53,6 +57,10 @@ public class GameHandlerScript : MonoBehaviour
         moneyText.text = money.ToString();
         approvalAText.text = approvalA.ToString();
         approvalBText.text = approvalB.ToString();
+        
+        moneyGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, money), 0, 1);
+        approvalAGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalA), 0, 1);
+        approvalBGauge.fillAmount = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalB), 0, 1);
     }
 
     public void NewRandomEvent()
