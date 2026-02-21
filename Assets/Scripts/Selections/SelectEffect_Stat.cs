@@ -22,7 +22,6 @@ public class SelectEffect_Stat : SelectEffect
 {
     public GameHandlerScript.StatType[]  stats;
     public int[]                         amounts;
-    [TextArea] public string             aftermathDialog;
 
     public override void Select()
     {

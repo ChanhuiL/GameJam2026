@@ -8,4 +8,9 @@ public class Quest : ScriptableObject
     [TextArea] public string QuestDialog;
 
     public List<SelectEffect> selections = new List<SelectEffect>();
+
+    public string Get_AftermathDialog(int idx)
+    {
+        return selections[idx].Get_AfterMathDialog();
+    }
 }
