@@ -39,6 +39,8 @@ public class GameHandlerScript : MonoBehaviour
     public TransitionManager transitionManager;
     public Event_Pages eventPages;
 
+    public EventObjectScript currentNode;
+
     
     private bool hasGameEnded = false;
     
