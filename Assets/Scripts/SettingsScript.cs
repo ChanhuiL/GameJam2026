@@ -7,10 +7,14 @@ using UnityEngine.UI;
 public class SettingsScript : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Slider volumeSlider;
+    public Slider masterVolumeSlider;
+    public Slider bgmVolumeSlider;
+    public Slider sfxVolumeSlider;
     public TMP_Dropdown resolutionDropdown;
     public Toggle toggleFullscreen;
     Resolution[] resolutions;
+    
+    public GameObject canvas;
     
     
     void Start()
@@ -35,9 +39,17 @@ public class SettingsScript : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-    public void SetVolume()
+    public void SetMasterVolume()
     {
-        audioMixer.SetFloat("MasterVolume", Mathf.Log10(volumeSlider.value) * 20);
+        audioMixer.SetFloat("MasterVolume", Mathf.Log10(masterVolumeSlider.value) * 20);
+    }
+    public void SetBGMVolume()
+    {
+        audioMixer.SetFloat("BGMVolume", Mathf.Log10(bgmVolumeSlider.value) * 20);
+    }
+    public void SetSFXVolume()
+    {
+        audioMixer.SetFloat("SFXVolume", Mathf.Log10(sfxVolumeSlider.value) * 20);
     }
 
     public void SetFullscreen()
@@ -49,5 +61,10 @@ public class SettingsScript : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionDropdown.value];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    public void CloseOption()
+    {
+        canvas.SetActive(false);
     }
 }
