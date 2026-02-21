@@ -3,6 +3,7 @@ using UnityEngine;
 public class TitleScreenHandlerScript : MonoBehaviour
 {
     public AudioManager audioManager;
+    public GameObject canvas;
     
     public void StartGame()
     {
@@ -11,7 +12,7 @@ public class TitleScreenHandlerScript : MonoBehaviour
 
     public void Option()
     {
-        
+        canvas.SetActive(true);
     }
     
     public void QuitGame()
