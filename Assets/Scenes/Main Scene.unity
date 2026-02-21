@@ -670,7 +670,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapCameraMovement
   movementDrag: 3
-  movementSpeed: 16
+  movementSpeed: 32
+  minX: -30
+  maxX: 30
+  minY: -25
+  maxY: 25
   scrollSensitive: 3
   zoomDrag: 12
   minSize: 8
@@ -3019,6 +3023,7 @@ MonoBehaviour:
   audioManager: {fileID: 914835667}
   transitionManager: {fileID: 2140154665}
   eventPages: {fileID: 868756693}
+  currentNode: {fileID: 0}
 --- !u!4 &1211399399
 Transform:
   m_ObjectHideFlags: 0
@@ -3049,6 +3054,12 @@ MonoBehaviour:
   QuestNodeParent: {fileID: 638745753}
   QuestNodePrefab: {fileID: 6840704673826504528, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   mcm: {fileID: 163358655}
+  quests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  LastQuestTime: 0
 --- !u!114 &1211399401
 MonoBehaviour:
   m_ObjectHideFlags: 0

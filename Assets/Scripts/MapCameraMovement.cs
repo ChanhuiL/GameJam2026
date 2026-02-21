@@ -7,6 +7,10 @@ public class MapCameraMovement : MonoBehaviour
     [Header("Movmenet")]
     public float        movementDrag = 3f;
     public float        movementSpeed = 16f;
+    public float        minX = -30f;
+    public float        maxX = 30f;
+    public float        minY = -25f;
+    public float        maxY = 25f;
 
     [Header("Zoom")]
     public float        scrollSensitive = 3f;
@@ -35,8 +39,11 @@ public class MapCameraMovement : MonoBehaviour
     void Update()
     {
         if (isFocusing) return;
-        if(vInput != Vector2.zero) 
+        if (vInput != Vector2.zero)
+        {
             transform.position += new Vector3(vInput.x, vInput.y, 0) * Time.deltaTime * movementSpeed;
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x,  minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), transform.position.z);
+        }
 
         Vector2 scrollValue = scrollAction.action.ReadValue<Vector2>();
         if(scrollValue.y != 0f)
@@ -56,7 +63,7 @@ public class MapCameraMovement : MonoBehaviour
     public void FocusCameraToHere(Vector2 pos)
     {
         isFocusing = true;
-        transform.position = pos + Vector2.right * targetZoomSize;
+        transform.position = pos + Vector2.right * targetZoomSize / 1.5f;
     }
 
     public void UnfocusCamera()
