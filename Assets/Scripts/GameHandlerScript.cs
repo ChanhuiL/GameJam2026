@@ -21,7 +21,7 @@ public class GameHandlerScript : MonoBehaviour
     }
     #endregion
 
-    public enum StatType { STAT_MONEY, STAT_A, STAT_B, STAT_END };
+    public enum StatType { STAT_MONEY, STAT_FOOD, STAT_POWER, STAT_CONFLICT, STAT_END };
 
     [Header("UI")]
     private int[]            statValues     = new int[(int)StatType.STAT_END];
@@ -30,7 +30,7 @@ public class GameHandlerScript : MonoBehaviour
     public Image[]           gaugeImages    = new Image[(int)(StatType.STAT_END)];
     public float             gaugeDrag      = 0.05f;
 
-    private int[]            statInitialValues = new int[]{30, 50, 50};
+    private int[]            statInitialValues = new int[]{30, 50, 50, 30};
     private int              statMinimum = 0;
     private int              statMaximum = 100;
     

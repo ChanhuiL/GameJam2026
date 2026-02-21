@@ -77,7 +77,7 @@ public class RandomEventScript : MonoBehaviour
         backgroundObjects[0].GetComponentInChildren<TextMeshProUGUI>().text = quest.Get_AftermathDialog(idx);
 
         gameHandler.currentNode.Solved();
-        Invoke("CloseRandomEvent", 2f);
+        Invoke("CloseQuestBoard", 2f);
     }
 
     public void DisableAftermath()
