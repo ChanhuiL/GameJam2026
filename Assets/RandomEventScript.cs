@@ -1,19 +1,28 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomEventScript : MonoBehaviour
 {
     public TextMeshProUGUI randomEventName;
     public TextMeshProUGUI randomEventDescription;
     public TextMeshProUGUI[] DecisionTexts;
-    
-    public void SetRandomEvent(RandomEvent randomEvent)
+    Button[] buttons;
+
+    private void Awake()
     {
-        randomEventName.text = randomEvent.eventName;
-        randomEventDescription.text = randomEvent.eventDescription;
-        for(int i=0;i<randomEvent.DecisionResult.GetLength(0);i++)
+        buttons = GetComponentsInChildren<Button>();
+    }
+
+    public void SetRandomEvent(Quest randomEvent)
+    {
+        randomEventName.text = randomEvent.QuestName;
+        randomEventDescription.text = randomEvent.QuestDialog;
+
+        for (int i = 0; i < DecisionTexts.GetLength(0); i++)
         {
-            DecisionTexts[i].text = randomEvent.DecisionDescription[i];
+            DecisionTexts[i].text = randomEvent.selections[i].displayName;
+            buttons[i].onClick.AddListener(randomEvent.selections[i].Select);
         }
     }
 }

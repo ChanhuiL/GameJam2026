@@ -4,15 +4,12 @@ using UnityEngine.EventSystems;
 
 public class EventObjectScript : MonoBehaviour, IPointerClickHandler
 {
-
-    public Animator animator;
-    public GameHandlerScript gameHandler;
     public MapCameraMovement mcm;
+    public Quest quest;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        gameHandler.NewRandomEvent();
-        animator.SetBool("RandomEventDisplay", true);
+        GameHandlerScript.Instance.NewRandomEvent(quest);
         mcm.FocusCameraToHere(transform.position);
     }
 }

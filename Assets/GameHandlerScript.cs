@@ -1,94 +1,91 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.TestTools;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class RandomEvent
-{
-    public string eventName;
-    public string eventDescription;
-    public string[] DecisionDescription;
-    public int[,] DecisionResult;
-
-    public RandomEvent(string eventName, string eventDescription, string[] DecisionDescription, int[,] DecisionResult)
-    {
-        this.eventName = eventName;
-        this.eventDescription = eventDescription;
-        this.DecisionDescription = DecisionDescription;
-        this.DecisionResult = DecisionResult;
-    }
-}
-
 public class GameHandlerScript : MonoBehaviour
 {
-    private int money = 5;
-    private int approvalA = 5;
-    private int approvalB = 5;
-    
-    private List<RandomEvent> randomEvents = new List<RandomEvent>()
+    #region Singleton Declare
+    public static GameHandlerScript Instance { get; private set; }
+
+    private void Awake()
     {
-        new RandomEvent("ëœë¤ ì´ë²¤íŠ¸1", "", new string[] {"í•œë‹¤", "ì•ˆí•œë‹¤"} ,new int[,] { {1, 0, 0}, {-1, 0, 0} }),
-        new RandomEvent("ëœë¤ ì´ë²¤íŠ¸2", "", new string[] {"Aë¥¼ í•œë‹¤", "Bë¥¼ í•œë‹¤"} ,new int[,] { {1, 1, 1}, {-1, -1, -1} }),
-        new RandomEvent("ëœë¤ ì´ë²¤íŠ¸3", "", new string[] {"ë¯¿ëŠ”ë‹¤", "ë¯¿ì§€ ì•ŠëŠ”ë‹¤"} ,new int[,] { {0, -3, 0}, {0, 0, -3} }),
-        new RandomEvent("ëœë¤ ì´ë²¤íŠ¸4", "", new string[] {"AAA", "BBB"} ,new int[,] { {-1, 1, 1}, {-3, 2, 2} }),
-    };
-    private RandomEvent currentRandomEvent;
-    
-    public TextMeshProUGUI moneyText;
-    public TextMeshProUGUI approvalAText;
-    public TextMeshProUGUI approvalBText;
-    public Image moneyGauge;
-    public Image approvalAGauge;
-    public Image approvalBGauge;
-    private float currentMoneyGaugeValue = 0;
-    private float currentApprovalAGaugeValue = 0;
-    private float currentApprovalBGaugeValue = 0;
-    public GameObject randomEventObject;
-    public bool hasRandomEvent = false;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        Initialize();
+    }
+    #endregion
+
+    public enum StatType { STAT_MONEY, STAT_A, STAT_B, STAT_END };
+
+    [Header("Stat Gauge")]
+    private int[]            statValues     = new int[(int)StatType.STAT_END];
+    private float[]          curGaugeValues = new float[(int)StatType.STAT_END];
+    public TextMeshProUGUI[] gaugeTexts     = new TextMeshProUGUI[(int)(StatType.STAT_END)];
+    public Image[]           gaugeImages    = new Image[(int)(StatType.STAT_END)];
+    public float             gaugeDrag      = 0.05f;
+
+    bool                     isLastBoardNumberOne = false;
+    public GameObject[]      questboardObjects = new GameObject[2];
+    private Animator[]       questboardAnimators = new Animator[2];
 
     public MapCameraMovement mcm;
     
-    public void DecisionMade(int decisionIndex)
+    public void DecisionMade(StatType[] statTypes, int[] amounts)
     {
-        if (!hasRandomEvent) return;
-        this.money += currentRandomEvent.DecisionResult[decisionIndex, 0];
-        this.approvalA += currentRandomEvent.DecisionResult[decisionIndex, 1];
-        this.approvalB += currentRandomEvent.DecisionResult[decisionIndex, 2];
-        
-        randomEventObject.GetComponent<Animator>().SetBool("RandomEventDisplay", false);
-        hasRandomEvent = false;
+        for (int i = 0; i < statTypes.Length; i++)
+            statValues[i] += amounts[i];
+
         mcm.UnfocusCamera();
     }
     
-    // Update is called once per frame
-    void Update()
+    //»ı¼º½Ã ÇÑ¹ø ½ÇÇà
+    void Initialize()
     {
-        moneyText.text = money.ToString();
-        approvalAText.text = approvalA.ToString();
-        approvalBText.text = approvalB.ToString();
-        
-        var targetMoneyGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, money), 0, 1);
-        var targetApprovalAGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalA), 0, 1);
-        var targetApprovalBGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, approvalB), 0, 1);
-        currentMoneyGaugeValue = Mathf.Lerp(currentMoneyGaugeValue, targetMoneyGaugeValue, 0.05f);
-        currentApprovalAGaugeValue = Mathf.Lerp(currentApprovalAGaugeValue, targetApprovalAGaugeValue, 0.05f);
-        currentApprovalBGaugeValue = Mathf.Lerp(currentApprovalBGaugeValue, targetApprovalBGaugeValue, 0.05f);
-
-        moneyGauge.fillAmount = currentMoneyGaugeValue;
-        approvalAGauge.fillAmount = currentApprovalAGaugeValue;
-        approvalBGauge.fillAmount = currentApprovalBGaugeValue;
+        for (int i = 0; i < questboardObjects.Length; ++i)
+            questboardAnimators[i] = questboardObjects[i].GetComponent<Animator>();
     }
 
-    public void NewRandomEvent()
+    void Update()
     {
-        if (hasRandomEvent) return;
-        currentRandomEvent = randomEvents[Random.Range(0, randomEvents.Count)];
-        randomEventObject.GetComponent<Animator>().SetBool("RandomEventDisplay", true);
-        randomEventObject.GetComponent<RandomEventScript>().SetRandomEvent(currentRandomEvent);
-        hasRandomEvent = true;
+        // °ÔÀÌÁö º¯µ¿ ºÎµå·´°Ô º¸°£
+        for(int i = 0; i < (int)(StatType.STAT_END); ++i)
+        {
+            gaugeTexts[i].text = statValues[i].ToString();
+
+            var targetGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, statValues[i]), 0, 1);
+            curGaugeValues[i] = Mathf.Lerp(curGaugeValues[i], targetGaugeValue, gaugeDrag);
+            gaugeImages[i].fillAmount = curGaugeValues[i];
+        }
+    }
+
+    public void NewRandomEvent(Quest interactedEvent)
+    {
+        int preIdx, postIdx;
+        if (isLastBoardNumberOne)
+        {
+            preIdx = 0;
+            postIdx = 1;
+        }
+        else
+        {
+            preIdx = 1;
+            postIdx = 0;
+        }
+        Debug.Log(preIdx);
+
+        questboardAnimators[preIdx].SetBool("RandomEventDisplay", false);
+        questboardAnimators[postIdx].SetBool("RandomEventDisplay", true);
+        questboardObjects[postIdx].transform.SetAsLastSibling();
+        questboardObjects[postIdx].GetComponent<RandomEventScript>().SetRandomEvent(interactedEvent);
+
+        isLastBoardNumberOne = !isLastBoardNumberOne;
     }
 }

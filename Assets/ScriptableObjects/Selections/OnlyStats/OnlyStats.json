@@ -1,0 +1,53 @@
+{
+  "OnlyStats": [
+    {
+      "fileName": "Select_Tax_Increase",
+	  "displayName": "많이내놔",
+      "stats": [ 0, 1 ],
+      "amounts": [ 3, -1 ],
+      "aftermathDialog": "과도한 세금 징수로 국고는 풍족해졌으나 백성들의 원성이 자자합니다."
+    },
+    {
+      "fileName": "Select_Tax_Decrease",
+	  "displayName": "조금만 내놔",
+      "stats": [ 0, 1 ],
+      "amounts": [ -1, 1 ],
+      "aftermathDialog": "세금을 감면하자 백성들이 환호하며 왕을 찬양합니다."
+    },
+    {
+      "fileName": "Select_Festival_Big",
+	  "displayName": "크게",
+      "stats": [ 1, 0 ],
+      "amounts": [ 3, -4 ],
+      "aftermathDialog": "성대한 축제를 열어 민심이 최고조에 달했지만 막대한 비용이 소모되었습니다."
+    },
+    {
+      "fileName": "Select_Festival_Small",
+	  "displayName": "작게",
+      "stats": [ 1, 0 ],
+      "amounts": [ -3, 3 ],
+      "aftermathDialog": "소박한 연회로 검소함을 보였으나 일부 귀족들이 실망했습니다."
+    },
+	{
+      "fileName": "Select_Festival_No",
+	  "displayName": "안해",
+      "stats": [ 0, 1 ],
+      "amounts": [ 2, -3 ],
+      "aftermathDialog": "예산 부족을 이유로 예정된 축제를 취소했습니다. 국고는 아꼈으나 백성들의 실망이 매우 큽니다."
+    },
+    {
+      "fileName": "Select_Army_Expand",
+	  "displayName": "군사를 확장한다",
+      "stats": [ 2, 0 ],
+      "amounts": [ 40, -30 ],
+      "aftermathDialog": "군비를 확장하여 국방을 튼튼히 했으나 재정에 부담이 생겼습니다."
+    },
+    {
+      "fileName": "Select_Army_Minimum",
+	  "displayName": "군사를 축소한다",
+      "stats": [ 2, 1, 0 ],
+      "amounts": [ -2, 1, 1 ],
+      "aftermathDialog": "군사 훈련을 줄이고 병사들을 농경에 투입하여 식량난을 해결했습니다."
+    }
+  ]
+}
