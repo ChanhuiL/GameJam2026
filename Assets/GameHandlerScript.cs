@@ -37,6 +37,8 @@ public class GameHandlerScript : MonoBehaviour
     private Animator[]       questboardAnimators = new Animator[2];
 
     public MapCameraMovement mcm;
+    public AudioManager audioManager;
+    public TransitionManager transitionManager;
     
     public void DecisionMade(StatType[] statTypes, int[] amounts)
     {
@@ -46,7 +48,7 @@ public class GameHandlerScript : MonoBehaviour
         mcm.UnfocusCamera();
     }
     
-    //»ý¼º½Ã ÇÑ¹ø ½ÇÇà
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½ï¿½
     void Initialize()
     {
         for (int i = 0; i < questboardObjects.Length; ++i)
@@ -55,7 +57,7 @@ public class GameHandlerScript : MonoBehaviour
 
     void Update()
     {
-        // °ÔÀÌÁö º¯µ¿ ºÎµå·´°Ô º¸°£
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµå·´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         for(int i = 0; i < (int)(StatType.STAT_END); ++i)
         {
             gaugeTexts[i].text = statValues[i].ToString();
