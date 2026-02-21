@@ -1,14 +1,23 @@
-using System;
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class EventObjectScript : MonoBehaviour, IPointerClickHandler
+public class QuestNode : MonoBehaviour, IPointerClickHandler
 {
     public MapCameraMovement mcm;
     public Quest quest;
-    
-    public bool isActivated = false;
+       
+    public bool isActivated = true;
+    private Animator animator;
+    public Sprite[] iconSprites;
+
+    private void Awake()
+    {
+        GetComponent<Animator>().speed = 8f / Quest.RareTimer[(int)quest.rarity] / 12f;
+
+        var SRs = GetComponentsInChildren<SpriteRenderer>();
+        SRs[0].color = Quest.RareColor[(int)quest.rarity];
+        SRs[1].sprite = iconSprites[(int)quest.questType];
+    }
 
     public void SetCameraTarget(MapCameraMovement _camera)
     {
@@ -23,12 +32,10 @@ public class EventObjectScript : MonoBehaviour, IPointerClickHandler
         mcm.FocusCameraToHere(transform.position);
     }
 
-    public void Update()
+    public void ExpiredQuest()
     {
-        if (isActivated)
-            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
-        else
-            GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 0.5f);
+        GameHandlerScript.Instance.CloseQuest();
+        quest.expireSelection.Select();
     }
 
     public void Activate()

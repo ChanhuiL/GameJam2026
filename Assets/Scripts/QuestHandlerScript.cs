@@ -28,7 +28,7 @@ public class QuestHandlerScript : MonoBehaviour
         new Vector2(34.18f, 16.36f),
         new Vector2(42.41f, 25.61f),
     };
-    private List<EventObjectScript> QuestNodes = new List<EventObjectScript>();
+    private List<QuestNode> QuestNodes = new List<QuestNode>();
     
     public List<Quest> quests;
     
@@ -40,9 +40,9 @@ public class QuestHandlerScript : MonoBehaviour
         {
             var tmp = Instantiate(QuestNodePrefab, QuestNodeParent);
             tmp.transform.position = pos;
-            tmp.GetComponent<EventObjectScript>().mcm = mcm;
-            tmp.GetComponent<EventObjectScript>().quest = GetQuest();
-            QuestNodes.Add(tmp.GetComponent<EventObjectScript>());
+            tmp.GetComponent<QuestNode>().mcm = mcm;
+            tmp.GetComponent<QuestNode>().quest = GetQuest();
+            QuestNodes.Add(tmp.GetComponent<QuestNode>());
         }
     }
 

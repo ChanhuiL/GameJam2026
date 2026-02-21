@@ -39,7 +39,7 @@ public class GameHandlerScript : MonoBehaviour
     public TransitionManager transitionManager;
     public Event_Pages eventPages;
 
-    public EventObjectScript currentNode;
+    public QuestNode currentNode;
 
     
     private bool hasGameEnded = false;
@@ -88,5 +88,10 @@ public class GameHandlerScript : MonoBehaviour
     public void OpenQuest(Quest interactedEvent)
     {
         eventPages.OpenQuest(interactedEvent);
+    }
+
+    public void CloseQuest()
+    {
+        eventPages.CloseQuestBoard();
     }
 }
