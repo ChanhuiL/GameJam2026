@@ -49,6 +49,11 @@ public class GameHandlerScript : MonoBehaviour
 
         mcm.UnfocusCamera();
     }
+
+    public void UnfocusCamera()
+    {
+        mcm.UnfocusCamera();
+    }
     
     void Initialize()
     {

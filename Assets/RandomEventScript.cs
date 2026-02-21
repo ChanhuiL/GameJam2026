@@ -1,6 +1,8 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class RandomEventScript : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class RandomEventScript : MonoBehaviour
     Button[]                 buttons;
 
     Animator                 animator;
+    
+    private GameHandlerScript gameHandler;
 
     private void Awake()
     {
@@ -26,6 +30,13 @@ public class RandomEventScript : MonoBehaviour
         {
             backgroundImage[i] = backgroundObjects[i].GetComponent<Image>();
         }
+        
+        
+    }
+
+    private void Start()
+    {
+        gameHandler = GameHandlerScript.Instance;
     }
 
     public void Update()
@@ -77,5 +88,6 @@ public class RandomEventScript : MonoBehaviour
     public void CloseRandomEvent()
     {
         animator.SetBool("RandomEventDisplay", false);
+        gameHandler.UnfocusCamera();
     }
 }
