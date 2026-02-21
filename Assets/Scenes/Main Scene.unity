@@ -1679,7 +1679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -245.88, y: 192.3}
+  m_AnchoredPosition: {x: -245.88, y: 192.29999}
   m_SizeDelta: {x: -519.58, y: -411.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841025923
@@ -3217,7 +3217,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 603711248}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0

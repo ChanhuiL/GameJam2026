@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Text;
 
+
 public class Resource_Manager : MonoBehaviour
 {
     #region Singleton Declare
