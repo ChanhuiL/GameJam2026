@@ -6,17 +6,25 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
     public MapCameraMovement mcm;
     public Quest quest;
        
-    public bool isActivated = true;
-    private Animator animator;
     public Sprite[] iconSprites;
+
+    public System.Action<QuestNode> OnLifeEnd;
 
     private void Awake()
     {
+    }
+
+    public void SetUp(Quest quest)
+    {
+        this.quest = quest;
+
         GetComponent<Animator>().speed = 8f / Quest.RareTimer[(int)quest.rarity] / 12f;
 
         var SRs = GetComponentsInChildren<SpriteRenderer>();
         SRs[0].color = Quest.RareColor[(int)quest.rarity];
         SRs[1].sprite = iconSprites[(int)quest.questType];
+
+        mcm = GameHandlerScript.Instance.mcm;
     }
 
     public void SetCameraTarget(MapCameraMovement _camera)
@@ -26,7 +34,8 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!isActivated || GameHandlerScript.Instance.currentNode == this) return;
+        if (GameHandlerScript.Instance.currentNode == this) return;
+
         GameHandlerScript.Instance.currentNode = this;
         GameHandlerScript.Instance.OpenQuest(quest);
         mcm.FocusCameraToHere(transform.position);
@@ -36,16 +45,11 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
     {
         GameHandlerScript.Instance.CloseQuest();
         quest.expireSelection.Select();
-    }
-
-    public void Activate()
-    {
-        isActivated = true;
+        OnLifeEnd?.Invoke(this);
     }
 
     public void Solved()
     {
-        isActivated = false;
-        // quest reset
+        OnLifeEnd?.Invoke(this);
     }
 }

@@ -256,6 +256,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30084541}
   m_CullTransparentMesh: 1
+--- !u!1 &31268186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31268187}
+  - component: {fileID: 31268188}
+  m_Layer: 0
+  m_Name: Wild (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31268187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31268186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.78, y: -4.34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31268188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31268186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 148.1, y: 432.8}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 5.94, y: 32.3}
 --- !u!1 &92376360
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +559,41 @@ Transform:
   - {fileID: 163358657}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &143016256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143016257}
+  m_Layer: 5
+  m_Name: Node Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &143016257
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143016256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1302897842}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &146943858
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +920,64 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f1a2cfbc40ab0642b56da5e521a3c74, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Manager_Temp
+  m_EditorClassIdentifier: Assembly-CSharp::Resource_Manager
+--- !u!1 &203092256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203092257}
+  - component: {fileID: 203092258}
+  m_Layer: 0
+  m_Name: Outer City
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &203092257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203092256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.44, y: -24.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203092258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203092256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 134, y: 337.9}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 3, y: 14.6}
 --- !u!1 &230286142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1202,43 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 509930113458346262, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
   m_PrefabInstance: {fileID: 3254449635031876122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &472562063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472562064}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472562064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472562063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2146999285}
+  - {fileID: 1767103448}
+  - {fileID: 1718257244}
+  - {fileID: 203092257}
+  - {fileID: 1036536275}
+  - {fileID: 31268187}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473899665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,7 +2713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -321.33978, y: -167.03006}
+  m_AnchoredPosition: {x: -321.33978, y: -167.03003}
   m_SizeDelta: {x: -488.48, y: -221.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002214230
@@ -2705,6 +2891,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002452530}
   m_CullTransparentMesh: 1
+--- !u!1 &1036536274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036536275}
+  - component: {fileID: 1036536276}
+  m_Layer: 0
+  m_Name: Wild
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1036536275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036536274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.28, y: -13.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036536276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036536274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 148.1, y: 432.8}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 5.94, y: 32.3}
 --- !u!1 &1039058279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,15 +3294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f0d1a4570d6744ca83852efd3142e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestHandlerScript
-  QuestNodeParent: {fileID: 638745753}
-  QuestNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
-  mcm: {fileID: 163358655}
-  quests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
-  LastQuestTime: 0
 --- !u!114 &1211399401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3171,6 +3405,7 @@ RectTransform:
   - {fileID: 324934518}
   - {fileID: 868756692}
   - {fileID: 2140154666}
+  - {fileID: 143016257}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4088,6 +4323,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646927972}
   m_CullTransparentMesh: 1
+--- !u!1 &1718257243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718257244}
+  - component: {fileID: 1718257245}
+  m_Layer: 0
+  m_Name: Desert Village
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1718257244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718257243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.58, y: -15.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718257245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718257243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 76.8, y: 196.5}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 7, y: 30.3}
 --- !u!1 &1728031504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,6 +4455,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728031504}
   m_CullTransparentMesh: 1
+--- !u!1 &1767103447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767103448}
+  - component: {fileID: 1767103449}
+  m_Layer: 0
+  m_Name: Hot Village
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767103448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767103447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.41, y: -5.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1767103449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767103447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 100, y: 228.6}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 13.61, y: 28.2}
 --- !u!1 &1824861984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,6 +5626,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6209335005147060600, guid: cb33049f56f910747b99e1712dce46bf, type: 3}
   m_PrefabInstance: {fileID: 2140154664}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2146999283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146999285}
+  - component: {fileID: 2146999284}
+  m_Layer: 0
+  m_Name: Central City
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2146999284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146999283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 100, y: 470}
+  degreeRange: {x: 24, y: 300}
+  cooldownRange: {x: 0, y: 15}
+--- !u!4 &2146999285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146999283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.54, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3254449635031876122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5393,3 +5799,4 @@ SceneRoots:
   - {fileID: 1302897842}
   - {fileID: 1211399399}
   - {fileID: 914835669}
+  - {fileID: 472562064}
