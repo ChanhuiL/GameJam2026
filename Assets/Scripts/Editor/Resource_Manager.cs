@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Text;
 
+
 public class Resource_Manager : MonoBehaviour
 {
     #region Singleton Declare
@@ -17,7 +18,6 @@ public class Resource_Manager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
     #endregion
 
@@ -28,7 +28,7 @@ public class Resource_Manager : MonoBehaviour
 
         if (!File.Exists(path))
         {
-            Debug.LogError($"JSON ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù: {path}");
+            Debug.LogError($"JSON ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½: {path}");
             return;
         }
 
@@ -46,17 +46,17 @@ public class Resource_Manager : MonoBehaviour
         {
             string assetPath = $"{folderPath}/{data.fileName}.asset";
 
-            // ÀÌ¹Ì Á¸ÀçÇÏ´ÂÁö È®ÀÎ
+            // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
             SelectEffect_Stat existingAsset = AssetDatabase.LoadAssetAtPath<SelectEffect_Stat>(assetPath);
 
             if (existingAsset != null)
             {
-                Debug.LogWarning($"ÀÌ¹Ì Á¸ÀçÇÏ´Â ¿¡¼Â: {data.fileName}");
+                Debug.LogWarning($"ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½: {data.fileName}");
                 skippedCount++;
                 continue;
             }
 
-            // »õ ÀÎ½ºÅÏ½º »ý¼º ¹× µ¥ÀÌÅÍ ÇÒ´ç
+            // ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½
             SelectEffect_Stat asset = ScriptableObject.CreateInstance<SelectEffect_Stat>();
 
             asset.displayName = data.displayName;
@@ -68,15 +68,15 @@ public class Resource_Manager : MonoBehaviour
             asset.amounts = data.amounts;
             asset.aftermathDialog = data.aftermathDialog;
 
-            // ÆÄÀÏ »ý¼º
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             AssetDatabase.CreateAsset(asset, assetPath);
             createdCount++;
         }
 
-        // º¯°æ»çÇ× ÀúÀå ¹× »õ·Î°íÄ§
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½Ä§
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        Debug.Log($"ÀÛ¾÷ ¿Ï·á! »ý¼ºµÊ: {createdCount}, °Ç³Ê¶Ü: {skippedCount}");
+        Debug.Log($"ï¿½Û¾ï¿½ ï¿½Ï·ï¿½! ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: {createdCount}, ï¿½Ç³Ê¶ï¿½: {skippedCount}");
     }
 }
