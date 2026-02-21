@@ -1532,14 +1532,14 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1564039049}
         m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
         m_MethodName: SetVolume
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3428,7 +3428,7 @@ RectTransform:
   m_Father: {fileID: 2093220562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3857,7 +3857,7 @@ RectTransform:
   m_Father: {fileID: 1947758834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4252,7 +4252,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1564039049}
         m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
         m_MethodName: SetResolution
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4408,7 +4408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1416650492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4660,7 +4660,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   audioMixer: {fileID: 24100000, guid: 94732e82fed7b4c43a1d333768626147, type: 2}
+  volumeSlider: {fileID: 485622103}
   resolutionDropdown: {fileID: 1366065304}
+  toggleFullscreen: {fileID: 1724114911}
 --- !u!1 &1647768916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,7 +5199,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1564039049}
         m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
         m_MethodName: SetFullscreen
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
