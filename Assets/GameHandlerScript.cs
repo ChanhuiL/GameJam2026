@@ -32,6 +32,10 @@ public class GameHandlerScript : MonoBehaviour
     public Image[]           gaugeImages    = new Image[(int)(StatType.STAT_END)];
     public float             gaugeDrag      = 0.05f;
 
+    private int[]            statInitialValues = new int[]{30, 50, 50};
+    private int              statMinimum = 0;
+    private int              statMaximum = 100;
+    
     bool                     isLastBoardNumberOne = false;
     public GameObject[]      questboardObjects = new GameObject[2];
     private Animator[]       questboardAnimators = new Animator[2];
@@ -53,6 +57,11 @@ public class GameHandlerScript : MonoBehaviour
     {
         for (int i = 0; i < questboardObjects.Length; ++i)
             questboardAnimators[i] = questboardObjects[i].GetComponent<Animator>();
+
+        for (int i=0;i<(int)(StatType.STAT_END);i++)
+        {
+            statValues[i] = statInitialValues[i];
+        }
     }
 
     void Update()
@@ -62,7 +71,7 @@ public class GameHandlerScript : MonoBehaviour
         {
             gaugeTexts[i].text = statValues[i].ToString();
 
-            var targetGaugeValue = Mathf.Clamp(Mathf.InverseLerp(0, 10, statValues[i]), 0, 1);
+            var targetGaugeValue = Mathf.Clamp(Mathf.InverseLerp(statMinimum, statMaximum, statValues[i]), 0, 1);
             curGaugeValues[i] = Mathf.Lerp(curGaugeValues[i], targetGaugeValue, gaugeDrag);
             gaugeImages[i].fillAmount = curGaugeValues[i];
         }
