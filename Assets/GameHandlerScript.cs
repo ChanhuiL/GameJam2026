@@ -49,8 +49,11 @@ public class GameHandlerScript : MonoBehaviour
     private float currentApprovalBGaugeValue = 0;
     public GameObject randomEventObject;
     public bool hasRandomEvent = false;
+    private bool hasGameOver = false;
 
     public MapCameraMovement mcm;
+    public AudioManager audioManager;
+    public TransitionManager transitionManager;
     
     public void DecisionMade(int decisionIndex)
     {
@@ -67,6 +70,7 @@ public class GameHandlerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            
         moneyText.text = money.ToString();
         approvalAText.text = approvalA.ToString();
         approvalBText.text = approvalB.ToString();
@@ -81,6 +85,14 @@ public class GameHandlerScript : MonoBehaviour
         moneyGauge.fillAmount = currentMoneyGaugeValue;
         approvalAGauge.fillAmount = currentApprovalAGaugeValue;
         approvalBGauge.fillAmount = currentApprovalBGaugeValue;
+
+        if (hasGameOver) return;
+        if (money < 0 || approvalA < 0 || approvalB < 0)
+        {
+            audioManager.ChangeSceneWithFade("Game Over Scene");
+            transitionManager.StartFadeOut();
+            hasGameOver = true;
+        }
     }
 
     public void NewRandomEvent()
