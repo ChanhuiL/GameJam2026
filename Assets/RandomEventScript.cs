@@ -22,7 +22,7 @@ public class RandomEventScript : MonoBehaviour
     public void SetRandomEvent(Quest randomEvent)
     {
         backgroundObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotations[Random.Range(0, rotations.Length)]));
-        backgroundImage.sprite = backgroundSprites[Random.Range(0, backgroundSprites.Length)];
+        //backgroundImage.sprite = backgroundSprites[Random.Range(0, backgroundSprites.Length)];
         randomEventName.text = randomEvent.QuestName;
         randomEventDescription.text = randomEvent.QuestDialog;
 
