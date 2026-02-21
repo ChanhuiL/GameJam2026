@@ -34,6 +34,7 @@ public class MapCameraMovement : MonoBehaviour
 
     void Update()
     {
+        if (isFocusing) return;
         if(vInput != Vector2.zero) 
             transform.position += new Vector3(vInput.x, vInput.y, 0) * Time.deltaTime * movementSpeed;
 
