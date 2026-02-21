@@ -37,7 +37,7 @@ public class QuestNodeSpawner : MonoBehaviour
     private GameObject OnCreateIndicator()
     {
         var obj = Instantiate(questNodePrefab);
-        obj.transform.SetParent(this.gameObject.transform, true);
+        obj.transform.SetParent(this.gameObject.transform);
         return obj;
     }
     private void OnGetFromPool(GameObject obj) => obj.SetActive(true);
@@ -58,7 +58,7 @@ public class QuestNodeSpawner : MonoBehaviour
             spawnDegree += Random.Range(degreeRange.x, degreeRange.y);
             spawnRange = Random.Range(radiusRange.x, radiusRange.y);
 
-            Vector3 dir = transform.position + new Vector3(Mathf.Cos(spawnDegree), Mathf.Sin(spawnDegree), 0) * Mathf.Deg2Rad * spawnRange;
+            Vector3 dir = transform.position + new Vector3(Mathf.Cos(spawnDegree * Mathf.Deg2Rad), Mathf.Sin(spawnDegree * Mathf.Deg2Rad), 0) * spawnRange;
 
             var node = questNodePool.Get().GetComponent<QuestNode>();
             node.transform.position = dir;
