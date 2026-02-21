@@ -4239,7 +4239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC655\uAD6D\uB825 11\uB144 11\uAC1C\uC6D4"
+  m_text: "2026 \uB144 02 \uC6D4 22 \uC77C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1db1162e1c84ce49b7bae912633f72f, type: 2}
   m_sharedMaterial: {fileID: -8521833102130628619, guid: a1db1162e1c84ce49b7bae912633f72f, type: 2}
