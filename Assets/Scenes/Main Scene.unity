@@ -313,6 +313,7 @@ MonoBehaviour:
   radiusRange: {x: 150, y: 400}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 8, y: 35}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &92376360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1054,7 @@ MonoBehaviour:
   radiusRange: {x: 100, y: 260}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 10, y: 30}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &230286142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,7 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1334,6 +1336,7 @@ MonoBehaviour:
   radiusRange: {x: 0, y: 50}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 25, y: 30}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &472562063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +2874,7 @@ MonoBehaviour:
   radiusRange: {x: 150, y: 440}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 5.94, y: 32.3}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1002214228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3148,7 @@ MonoBehaviour:
   radiusRange: {x: 150, y: 440}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 5.94, y: 32.3}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1039058279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3573,7 @@ GameObject:
   - component: {fileID: 1211399398}
   - component: {fileID: 1211399400}
   - component: {fileID: 1211399401}
+  - component: {fileID: 1211399402}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -3643,6 +3649,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeControllerScript
   timeText: {fileID: 1448399475}
+--- !u!82 &1211399402
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211399397}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -1843816899289847949, guid: 94732e82fed7b4c43a1d333768626147, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1301191358
 GameObject:
   m_ObjectHideFlags: 0
@@ -4575,6 +4678,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowAftermath
       objectReference: {fileID: 0}
+    - target: {fileID: 4414969830208785438, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: QuestExitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 4940639a9b56c43409d6b150c69c7e14, type: 3}
+    - target: {fileID: 4414969830208785438, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: QuestEnterSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: b18302d7494f7c040a20b3ce6029da50, type: 3}
     - target: {fileID: 4981242645263395483, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4655,6 +4766,7 @@ MonoBehaviour:
   radiusRange: {x: 180, y: 470}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 5, y: 15}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1646927972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,6 +4961,7 @@ MonoBehaviour:
   radiusRange: {x: 60, y: 150}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 15, y: 35}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1728031504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,6 +5094,7 @@ MonoBehaviour:
   radiusRange: {x: 150, y: 400}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 8, y: 35}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1767103447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,6 +5152,7 @@ MonoBehaviour:
   radiusRange: {x: 100, y: 250}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 20, y: 30}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1824861984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,6 +5348,7 @@ MonoBehaviour:
   radiusRange: {x: 100, y: 260}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 10, y: 30}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &1863875338
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,7 +5839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.98742133, g: 0.94084483, b: 0.884953, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6130,6 +6246,7 @@ MonoBehaviour:
   radiusRange: {x: 100, y: 250}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 20, y: 30}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!1 &2131122322
 GameObject:
   m_ObjectHideFlags: 0
@@ -6384,6 +6501,7 @@ MonoBehaviour:
   radiusRange: {x: 180, y: 470}
   degreeRange: {x: 30, y: 280}
   cooldownRange: {x: 5, y: 15}
+  nodeSpawnSFX: {fileID: 0}
 --- !u!4 &2146999285
 Transform:
   m_ObjectHideFlags: 0
@@ -6495,6 +6613,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 868756693}
+    - target: {fileID: 4414969830208785438, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: QuestExitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 4940639a9b56c43409d6b150c69c7e14, type: 3}
+    - target: {fileID: 4414969830208785438, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: QuestEnterSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: b18302d7494f7c040a20b3ce6029da50, type: 3}
     - target: {fileID: 4981242645263395483, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

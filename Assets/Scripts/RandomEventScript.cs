@@ -18,7 +18,11 @@ public class RandomEventScript : MonoBehaviour
 
     Animator                 animator;
     
+    public bool QuestOpened = false;
+    
     private GameHandlerScript gameHandler;
+    public AudioClip QuestEnterSFX;
+    public AudioClip QuestExitSFX;
 
     private void Awake()
     {
@@ -43,7 +47,7 @@ public class RandomEventScript : MonoBehaviour
     {
     }
 
-    public void SetRandomEvent(Quest randomEvent)
+    public void SetRandomEvent(Quest randomEvent, QuestNode quest)
     {
         animator.SetBool("RandomEventDisplay", true);
 
@@ -65,6 +69,12 @@ public class RandomEventScript : MonoBehaviour
             buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(randomEvent.selections[i].Select);
         }
+        
+        QuestOpened = true;
+        gameHandler.currentNode = quest;
+        gameHandler.PlayAudioClip(QuestEnterSFX);
+        
+        gameHandler.FocusCamera(quest.transform.position);
         CancelInvoke();
     }
     
@@ -90,6 +100,11 @@ public class RandomEventScript : MonoBehaviour
     public void CloseQuestBoard()
     {
         animator.SetBool("RandomEventDisplay", false);
+        
+        QuestOpened = false;
+        gameHandler.currentNode = null;
+        gameHandler.PlayAudioClip(QuestExitSFX);
+        
         gameHandler.UnfocusCamera();
     }
 }

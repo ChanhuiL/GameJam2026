@@ -21,6 +21,8 @@ public class QuestNodeSpawner : MonoBehaviour
     public Vector2 cooldownRange = Vector2.zero;
     IObjectPool<GameObject> questNodePool;
 
+    public AudioClip nodeSpawnSFX;
+
     private void Awake()
     {
         spawnRange = Random.Range(radiusRange.x, radiusRange.y);
@@ -67,6 +69,7 @@ public class QuestNodeSpawner : MonoBehaviour
                 questNodePool.Release(lifeEndNode.gameObject);
                 lifeEndNode.OnLifeEnd = null;
             };
+            GameHandlerScript.Instance.PlayAudioClip(nodeSpawnSFX);
         }
     }
 }

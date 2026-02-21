@@ -40,7 +40,6 @@ public class GameHandlerScript : MonoBehaviour
     public Event_Pages eventPages;
 
     public QuestNode currentNode;
-
     
     private bool hasGameEnded = false;
     
@@ -48,13 +47,21 @@ public class GameHandlerScript : MonoBehaviour
     {
         for (int i = 0; i < statTypes.Length; i++)
             statValues[i] += amounts[i];
-
-        mcm.UnfocusCamera();
     }
 
+
+    public void FocusCamera(Vector2 pos)
+    {
+        mcm.FocusCameraToHere(pos);
+    }
     public void UnfocusCamera()
     {
         mcm.UnfocusCamera();
+    }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        GetComponent<AudioSource>().PlayOneShot(clip);
     }
     
     void Initialize()
@@ -85,9 +92,9 @@ public class GameHandlerScript : MonoBehaviour
         }
     }
 
-    public void OpenQuest(Quest interactedEvent)
+    public void OpenQuest(Quest interactedEvent, QuestNode quest)
     {
-        eventPages.OpenQuest(interactedEvent);
+        eventPages.OpenQuest(interactedEvent, quest);
     }
 
     public void CloseQuest()
