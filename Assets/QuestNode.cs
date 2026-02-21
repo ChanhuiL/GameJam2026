@@ -6,7 +6,7 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
     public MapCameraMovement mcm;
     public Quest quest;
        
-    private bool isActivated = true;
+    public bool isActivated = true;
     private Animator animator;
     public Sprite[] iconSprites;
 
@@ -26,7 +26,8 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!isActivated) return;
+        if (!isActivated || GameHandlerScript.Instance.currentNode == this) return;
+        GameHandlerScript.Instance.currentNode = this;
         GameHandlerScript.Instance.OpenQuest(quest);
         mcm.FocusCameraToHere(transform.position);
     }
@@ -35,5 +36,16 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
     {
         GameHandlerScript.Instance.CloseQuest();
         quest.expireSelection.Select();
+    }
+
+    public void Activate()
+    {
+        isActivated = true;
+    }
+
+    public void Solved()
+    {
+        isActivated = false;
+        // quest reset
     }
 }

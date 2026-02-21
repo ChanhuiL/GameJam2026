@@ -20,7 +20,7 @@ public class Event_Pages : MonoBehaviour
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             GameHandlerScript.Instance.currentNode = null;
-            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseRandomEvent();
+            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseQuestBoard();
         }
     }
 
