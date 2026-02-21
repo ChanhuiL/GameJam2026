@@ -66,6 +66,11 @@ public class GameHandlerScript : MonoBehaviour
         }
     }
 
+    public void CloseRandomEvent()
+    {
+        questboardAnimators[isLastBoardNumberOne ? 0 : 1].SetBool("RandomEventDisplay", false);
+    }
+
     public void NewRandomEvent(Quest interactedEvent)
     {
         int preIdx, postIdx;
@@ -79,7 +84,6 @@ public class GameHandlerScript : MonoBehaviour
             preIdx = 1;
             postIdx = 0;
         }
-        Debug.Log(preIdx);
 
         questboardAnimators[preIdx].SetBool("RandomEventDisplay", false);
         questboardAnimators[postIdx].SetBool("RandomEventDisplay", true);

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Selection/Random")]
-public class Selection_Random : SelectEffect
+public class SelectEffect_Random : SelectEffect
 {
     public float     successRate = 0.5f;
 

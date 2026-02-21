@@ -39,7 +39,7 @@
       "fileName": "Select_Army_Expand",
 	  "displayName": "군사를 확장한다",
       "stats": [ 2, 0 ],
-      "amounts": [ 40, -30 ],
+      "amounts": [ 4, -３ ],
       "aftermathDialog": "군비를 확장하여 국방을 튼튼히 했으나 재정에 부담이 생겼습니다."
     },
     {
