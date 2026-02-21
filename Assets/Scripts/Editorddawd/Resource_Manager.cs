@@ -1,42 +1,35 @@
 using System.IO;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 using UnityEngine;
 using System.Text;
-
+using System; // Serializable 사용을 위해 추가
 
 public class Resource_Manager : MonoBehaviour
 {
-    #region Singleton Declare
+    #region Singleton
     public static Resource_Manager Instance { get; private set; }
-
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
     }
     #endregion
 
     [ContextMenu("Generate OnlyStat")]
-    void LoadData()
+    public void LoadData()
     {
+        // 유니티 에디터 상에서만 동작하도록 보장
+#if UNITY_EDITOR
         string path = Path.Combine(Application.dataPath, "ScriptableObjects/Selections/OnlyStats/OnlyStats.json");
 
         if (!File.Exists(path))
         {
-            Debug.LogError($"JSON ������ ã�� �� �����ϴ�: {path}");
+            Debug.LogError($"JSON 파일을 찾을 수 없습니다: {path}");
             return;
         }
 
         string json = File.ReadAllText(path, Encoding.UTF8);
-        OnlyStatDataWrapper dataList = JsonUtility.FromJson<OnlyStatDataWrapper>(json); 
-        
+        OnlyStatDataWrapper dataList = JsonUtility.FromJson<OnlyStatDataWrapper>(json);
+
         string folderPath = "Assets/ScriptableObjects/Selections/OnlyStats";
         if (!Directory.Exists(folderPath))
             Directory.CreateDirectory(folderPath);
@@ -48,17 +41,16 @@ public class Resource_Manager : MonoBehaviour
         {
             string assetPath = $"{folderPath}/{data.fileName}.asset";
 
-            // �̹� �����ϴ��� Ȯ��
-            SelectEffect_Stat existingAsset = AssetDatabase.LoadAssetAtPath<SelectEffect_Stat>(assetPath);
+            // AssetDatabase 앞에 UnityEditor.을 꼭 붙여야 합니다.
+            SelectEffect_Stat existingAsset = UnityEditor.AssetDatabase.LoadAssetAtPath<SelectEffect_Stat>(assetPath);
 
             if (existingAsset != null)
             {
-                Debug.LogWarning($"�̹� �����ϴ� ����: {data.fileName}");
+                Debug.LogWarning($"이미 존재하는 에셋: {data.fileName}");
                 skippedCount++;
                 continue;
             }
 
-            // �� �ν��Ͻ� ���� �� ������ �Ҵ�
             SelectEffect_Stat asset = ScriptableObject.CreateInstance<SelectEffect_Stat>();
 
             asset.displayName = data.displayName;
@@ -70,15 +62,17 @@ public class Resource_Manager : MonoBehaviour
             asset.amounts = data.amounts;
             asset.aftermathDialog = data.aftermathDialog;
 
-            // ���� ����
-            AssetDatabase.CreateAsset(asset, assetPath);
+            // 에셋 생성
+            UnityEditor.AssetDatabase.CreateAsset(asset, assetPath);
             createdCount++;
         }
 
-        // ������� ���� �� ���ΰ�ħ
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
+        UnityEditor.AssetDatabase.SaveAssets();
+        UnityEditor.AssetDatabase.Refresh();
 
-        Debug.Log($"�۾� �Ϸ�! ������: {createdCount}, �ǳʶ�: {skippedCount}");
+        Debug.Log($"작업 완료! 생성됨: {createdCount}, 건너뜀: {skippedCount}");
+#else
+        Debug.LogWarning("AssetDatabase는 에디터에서만 사용할 수 있습니다.");
+#endif
     }
 }

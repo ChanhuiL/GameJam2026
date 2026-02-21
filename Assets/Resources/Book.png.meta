@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aff32a9d00438394f975a4bff88aeb38
+guid: e9d6ebd9d2bdbcc46820da68c3bd2a6b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,45 +97,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plain Paper UI SpriteSheet_0
+      name: Book_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 3738
-        width: 385
-        height: 417
+        x: 18
+        y: 34
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d3dc8ee5f52af4da22b8ec76feb468
-      internalID: 895072889
+      spriteID: 3a6bc6fea7bb67347926563e3dd180a3
+      internalID: 263975397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plain Paper UI SpriteSheet_1
+      name: Book_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2938
-        width: 627
-        height: 507
+        x: 146
+        y: 34
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 51, y: 50, z: 45, w: 49}
+      pivot: {x: 0, y: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c0958b48d41d34d82151cd777c95f1
-      internalID: -1449716470
+      spriteID: 16e74090b1b68734786d958177be096c
+      internalID: 371912146
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dea8bba51f7586e42995cb94bd304f70
+    spriteID: c18cf6496c352f24bb9a8c0f59430e88
     internalID: 0
     vertices: []
     indices: 
@@ -154,8 +154,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plain Paper UI SpriteSheet_0: 895072889
-      Plain Paper UI SpriteSheet_1: -1449716470
+      Book_0: 263975397
+      Book_1: 371912146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
