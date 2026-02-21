@@ -6,19 +6,18 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
     public Quest quest;
        
     public Sprite[] iconSprites;
-
+    Animator animator;
     public System.Action<QuestNode> OnLifeEnd;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
     }
 
     public void SetUp(Quest quest)
     {
         this.quest = quest;
-
-        GetComponent<Animator>().speed = 8f / Quest.RareTimer[(int)quest.rarity] / 12f;
-
+        animator.SetFloat("timerMulti", 8f / Quest.RareTimer[(int)quest.rarity] / 12f);
         var SRs = GetComponentsInChildren<SpriteRenderer>();
         SRs[0].color = Quest.RareColor[(int)quest.rarity];
         SRs[1].sprite = iconSprites[(int)quest.questType];
@@ -36,10 +35,15 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
         if (GameHandlerScript.Instance.currentNode == this)
             GameHandlerScript.Instance.CloseQuest();
         quest.expireSelection.Select();
-        OnLifeEnd?.Invoke(this);
+        animator.SetTrigger("LifeEnd");
     }
 
     public void Solved()
+    {
+        animator.SetTrigger("LifeEnd");
+    }
+
+    public void ReturnToPool()
     {
         OnLifeEnd?.Invoke(this);
     }
