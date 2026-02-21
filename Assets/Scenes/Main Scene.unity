@@ -2268,10 +2268,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1647768917}
     m_Modifications:
+    - target: {fileID: 316930119854150820, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 1309451980666853344, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1211399398}
+    - target: {fileID: 2770457369654210181, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3556099361627449040, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
