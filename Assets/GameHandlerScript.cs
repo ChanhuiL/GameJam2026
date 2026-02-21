@@ -18,7 +18,6 @@ public class GameHandlerScript : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
         Initialize();
     }
     #endregion
@@ -43,6 +42,8 @@ public class GameHandlerScript : MonoBehaviour
     public MapCameraMovement mcm;
     public AudioManager audioManager;
     public TransitionManager transitionManager;
+    
+    private bool hasGameEnded = false;
     
     public void DecisionMade(StatType[] statTypes, int[] amounts)
     {
@@ -74,6 +75,16 @@ public class GameHandlerScript : MonoBehaviour
             var targetGaugeValue = Mathf.Clamp(Mathf.InverseLerp(statMinimum, statMaximum, statValues[i]), 0, 1);
             curGaugeValues[i] = Mathf.Lerp(curGaugeValues[i], targetGaugeValue, gaugeDrag);
             gaugeImages[i].fillAmount = curGaugeValues[i];
+        }
+
+        for (int i = 0; i < (int)(StatType.STAT_END); i++)
+        {
+            if (statValues[i] < 0 && !hasGameEnded)
+            {
+                hasGameEnded = true;
+                transitionManager.StartFadeOut();
+                audioManager.ChangeSceneWithFade("Game Over Scene");
+            }
         }
     }
 
