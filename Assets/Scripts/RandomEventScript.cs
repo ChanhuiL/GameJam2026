@@ -62,6 +62,7 @@ public class RandomEventScript : MonoBehaviour
         for (int i = 0; i < decisionTexts.GetLength(0); i++)
         {
             decisionTexts[i].text = randomEvent.selections[i].displayName;
+            buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(randomEvent.selections[i].Select);
         }
         CancelInvoke();

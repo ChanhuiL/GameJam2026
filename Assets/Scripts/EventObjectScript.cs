@@ -17,8 +17,8 @@ public class EventObjectScript : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!isActivated) return;
-        GameHandlerScript.Instance.currentNode = this.GetComponent<EventObjectScript>();
+        if (!isActivated || GameHandlerScript.Instance.currentNode == this) return;
+        GameHandlerScript.Instance.currentNode = this;
         GameHandlerScript.Instance.OpenQuest(quest);
         mcm.FocusCameraToHere(transform.position);
     }
