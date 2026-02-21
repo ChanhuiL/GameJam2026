@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 public class GameHandlerScript : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class GameHandlerScript : MonoBehaviour
 
     public enum StatType { STAT_MONEY, STAT_A, STAT_B, STAT_END };
 
-    [Header("Stat Gauge")]
+    [Header("UI")]
     private int[]            statValues     = new int[(int)StatType.STAT_END];
     private float[]          curGaugeValues = new float[(int)StatType.STAT_END];
     public TextMeshProUGUI[] gaugeTexts     = new TextMeshProUGUI[(int)(StatType.STAT_END)];
@@ -35,13 +34,11 @@ public class GameHandlerScript : MonoBehaviour
     private int              statMinimum = 0;
     private int              statMaximum = 100;
     
-    bool                     isLastBoardNumberOne = false;
-    public GameObject[]      questboardObjects = new GameObject[2];
-    private Animator[]       questboardAnimators = new Animator[2];
-
     public MapCameraMovement mcm;
     public AudioManager audioManager;
     public TransitionManager transitionManager;
+    public Event_Pages eventPages;
+
     
     private bool hasGameEnded = false;
     
@@ -53,21 +50,14 @@ public class GameHandlerScript : MonoBehaviour
         mcm.UnfocusCamera();
     }
     
-    //������ �ѹ� ����
     void Initialize()
     {
-        for (int i = 0; i < questboardObjects.Length; ++i)
-            questboardAnimators[i] = questboardObjects[i].GetComponent<Animator>();
-
-        for (int i=0;i<(int)(StatType.STAT_END);i++)
-        {
+        for (int i = 0; i < (int)(StatType.STAT_END); i++)
             statValues[i] = statInitialValues[i];
-        }
     }
 
     void Update()
     {
-        // ������ ���� �ε巴�� ����
         for(int i = 0; i < (int)(StatType.STAT_END); ++i)
         {
             gaugeTexts[i].text = statValues[i].ToString();
@@ -88,30 +78,8 @@ public class GameHandlerScript : MonoBehaviour
         }
     }
 
-    public void CloseRandomEvent()
+    public void OpenQuest(Quest interactedEvent)
     {
-        questboardAnimators[isLastBoardNumberOne ? 0 : 1].SetBool("RandomEventDisplay", false);
-    }
-
-    public void NewRandomEvent(Quest interactedEvent)
-    {
-        int preIdx, postIdx;
-        if (isLastBoardNumberOne)
-        {
-            preIdx = 0;
-            postIdx = 1;
-        }
-        else
-        {
-            preIdx = 1;
-            postIdx = 0;
-        }
-
-        questboardAnimators[preIdx].SetBool("RandomEventDisplay", false);
-        questboardAnimators[postIdx].SetBool("RandomEventDisplay", true);
-        questboardObjects[postIdx].transform.SetAsLastSibling();
-        questboardObjects[postIdx].GetComponent<RandomEventScript>().SetRandomEvent(interactedEvent);
-
-        isLastBoardNumberOne = !isLastBoardNumberOne;
+        eventPages.OpenQuest(interactedEvent);
     }
 }
