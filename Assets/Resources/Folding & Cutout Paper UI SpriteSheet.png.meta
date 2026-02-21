@@ -162,7 +162,7 @@ TextureImporter:
         width: 487
         height: 435
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,6 +171,50 @@ TextureImporter:
       bones: []
       spriteID: b404227b5c619034c84bce4be7c99190
       internalID: 216181832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folding & Cutout Paper UI SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3479
+        width: 424
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5409d356384d069498cab05bf0a1d157
+      internalID: 1662732152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folding & Cutout Paper UI SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 3195
+        width: 484
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb1fef952e86f4a87070a0ed2e8aab
+      internalID: -1715923416
       vertices: []
       indices: 
       edges: []
@@ -192,6 +236,8 @@ TextureImporter:
       Folding & Cutout Paper UI SpriteSheet_0: 822794778
       Folding & Cutout Paper UI SpriteSheet_1: 315908294
       Folding & Cutout Paper UI SpriteSheet_2: 216181832
+      Folding & Cutout Paper UI SpriteSheet_3: 1662732152
+      Folding & Cutout Paper UI SpriteSheet_4: -1715923416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
