@@ -17,8 +17,11 @@ public class Event_Pages : MonoBehaviour
 
     private void Update()
     {
-        if(Keyboard.current.escapeKey.wasPressedThisFrame)
-            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseQuestBoard();
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            GameHandlerScript.Instance.currentNode = null;
+            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseRandomEvent();
+        }
     }
 
     public void OpenQuest(Quest interactedEvent)
