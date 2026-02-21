@@ -22,7 +22,7 @@ public class QuestNode : MonoBehaviour, IPointerClickHandler
 
         var SRs = GetComponentsInChildren<SpriteRenderer>();
         SRs[0].color = Quest.RareColor[(int)quest.rarity];
-        SRs[1].sprite = iconSprites[(int)quest.questType];
+        SRs[2].sprite = iconSprites[(int)quest.questType];
 
         mcm = GameHandlerScript.Instance.mcm;
     }

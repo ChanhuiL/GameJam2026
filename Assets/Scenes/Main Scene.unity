@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 31268187}
   - component: {fileID: 31268188}
   m_Layer: 0
-  m_Name: Wild (1)
+  m_Name: Mega City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,9 +310,9 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 148.1, y: 432.8}
+  radiusRange: {x: 150, y: 400}
   degreeRange: {x: 24, y: 294}
-  cooldownRange: {x: 5.94, y: 32.3}
+  cooldownRange: {x: 8, y: 35}
 --- !u!1 &92376360
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,9 +975,9 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 134, y: 337.9}
+  radiusRange: {x: 100, y: 260}
   degreeRange: {x: 24, y: 294}
-  cooldownRange: {x: 3, y: 14.6}
+  cooldownRange: {x: 10, y: 30}
 --- !u!1 &230286142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1202,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 509930113458346262, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
   m_PrefabInstance: {fileID: 3254449635031876122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &441045078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441045079}
+  - component: {fileID: 441045080}
+  m_Layer: 0
+  m_Name: Forbidden Village
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441045079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441045078}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.28, y: 25.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441045080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441045078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 0, y: 50}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 25, y: 30}
 --- !u!1 &472562063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472562064}
   m_Layer: 0
-  m_Name: Spawners
+  m_Name: QuestNodeSpawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1233,10 +1290,16 @@ Transform:
   m_Children:
   - {fileID: 2146999285}
   - {fileID: 1767103448}
+  - {fileID: 2109291126}
   - {fileID: 1718257244}
   - {fileID: 203092257}
+  - {fileID: 1856512171}
   - {fileID: 1036536275}
+  - {fileID: 976719067}
   - {fileID: 31268187}
+  - {fileID: 1742728764}
+  - {fileID: 1626238368}
+  - {fileID: 441045079}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473899665
@@ -2676,6 +2739,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &976719066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976719067}
+  - component: {fileID: 976719068}
+  m_Layer: 0
+  m_Name: Wild (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976719067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976719066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.66, y: 12.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976719068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976719066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 150, y: 440}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 5.94, y: 32.3}
 --- !u!1 &1002214228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,7 +3022,7 @@ GameObject:
   - component: {fileID: 1036536275}
   - component: {fileID: 1036536276}
   m_Layer: 0
-  m_Name: Wild
+  m_Name: Wild (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2945,7 +3065,7 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 148.1, y: 432.8}
+  radiusRange: {x: 150, y: 440}
   degreeRange: {x: 24, y: 294}
   cooldownRange: {x: 5.94, y: 32.3}
 --- !u!1 &1039058279
@@ -4186,6 +4306,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1572910969682672351, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
   m_PrefabInstance: {fileID: 1560037875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1626238367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626238368}
+  - component: {fileID: 1626238369}
+  m_Layer: 0
+  m_Name: Black City
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626238368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626238367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.16, y: 15.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626238369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626238367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 180, y: 470}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 5, y: 15}
 --- !u!1 &1646927972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,9 +4554,9 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 76.8, y: 196.5}
-  degreeRange: {x: 24, y: 294}
-  cooldownRange: {x: 7, y: 30.3}
+  radiusRange: {x: 60, y: 150}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 15, y: 35}
 --- !u!1 &1728031504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4455,6 +4632,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728031504}
   m_CullTransparentMesh: 1
+--- !u!1 &1742728763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742728764}
+  - component: {fileID: 1742728765}
+  m_Layer: 0
+  m_Name: Snow City
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1742728764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742728763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.88, y: 19.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742728765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742728763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 150, y: 400}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 8, y: 35}
 --- !u!1 &1767103447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,9 +4743,9 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 100, y: 228.6}
-  degreeRange: {x: 24, y: 294}
-  cooldownRange: {x: 13.61, y: 28.2}
+  radiusRange: {x: 100, y: 250}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 20, y: 30}
 --- !u!1 &1824861984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,6 +4884,63 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1856512170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856512171}
+  - component: {fileID: 1856512172}
+  m_Layer: 0
+  m_Name: Leaf Village
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856512171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856512170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.13, y: 16.34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856512172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856512170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 100, y: 260}
+  degreeRange: {x: 24, y: 294}
+  cooldownRange: {x: 10, y: 30}
 --- !u!1 &1863875338
 GameObject:
   m_ObjectHideFlags: 0
@@ -5414,6 +5705,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079989708}
   m_CullTransparentMesh: 1
+--- !u!1 &2109291125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109291126}
+  - component: {fileID: 2109291127}
+  m_Layer: 0
+  m_Name: Warz Village
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109291126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109291125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.47, y: 11.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472562064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2109291127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109291125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d3b39f9b44f7429b9b4deba59c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
+  questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
+  randomQuests:
+  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
+  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
+  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
+  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  eventQuests: []
+  spawnRange: 0
+  spawnDegree: 0
+  spawnCooldown: 0
+  radiusRange: {x: 100, y: 250}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 20, y: 30}
 --- !u!1 &2131122322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5665,9 +6013,9 @@ MonoBehaviour:
   spawnRange: 0
   spawnDegree: 0
   spawnCooldown: 0
-  radiusRange: {x: 100, y: 470}
-  degreeRange: {x: 24, y: 300}
-  cooldownRange: {x: 0, y: 15}
+  radiusRange: {x: 180, y: 470}
+  degreeRange: {x: 30, y: 280}
+  cooldownRange: {x: 5, y: 15}
 --- !u!4 &2146999285
 Transform:
   m_ObjectHideFlags: 0
