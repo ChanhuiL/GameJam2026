@@ -85,7 +85,7 @@ public class RandomEventScript : MonoBehaviour
         CancelInvoke();
     }
 
-    public void CloseRandomEvent()
+    public void CloseQuestBoard()
     {
         animator.SetBool("RandomEventDisplay", false);
         gameHandler.UnfocusCamera();

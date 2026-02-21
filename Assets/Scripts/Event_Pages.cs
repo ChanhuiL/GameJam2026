@@ -18,7 +18,7 @@ public class Event_Pages : MonoBehaviour
     private void Update()
     {
         if(Keyboard.current.escapeKey.wasPressedThisFrame)
-            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseRandomEvent();
+            questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseQuestBoard();
     }
 
     public void OpenQuest(Quest interactedEvent)
@@ -37,7 +37,7 @@ public class Event_Pages : MonoBehaviour
             postIdx = 0;
         }
 
-        questboardScripts[preIdx].CloseRandomEvent();
+        questboardScripts[preIdx].CloseQuestBoard();
         questboardObjects[postIdx].transform.SetAsLastSibling();
         questboardScripts[postIdx].SetRandomEvent(interactedEvent);
 
@@ -47,5 +47,10 @@ public class Event_Pages : MonoBehaviour
     public void ShowAftermath(int idx)
     {
         questboardScripts[isLastBoardNumberOne ? 0 : 1].ShowAftermath(curQuest, idx);
+    }
+
+    public void CloseQuestBoard()
+    {
+        questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseQuestBoard();
     }
 }

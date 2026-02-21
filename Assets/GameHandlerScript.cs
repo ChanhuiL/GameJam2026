@@ -87,4 +87,9 @@ public class GameHandlerScript : MonoBehaviour
     {
         eventPages.OpenQuest(interactedEvent);
     }
+
+    public void CloseQuest()
+    {
+        eventPages.CloseQuestBoard();
+    }
 }

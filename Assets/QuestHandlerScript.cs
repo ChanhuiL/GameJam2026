@@ -20,7 +20,7 @@ public class QuestHandlerScript : MonoBehaviour
         {
             var tmp = Instantiate(QuestNodePrefab, QuestNodeParent);
             tmp.transform.position = pos;
-            tmp.GetComponent<EventObjectScript>().mcm = mcm;
+            tmp.GetComponent<QuestNode>().mcm = mcm;
         }
     }
 }
