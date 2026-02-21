@@ -17,14 +17,13 @@ public class Event_Pages : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame && questboardScripts[isLastBoardNumberOne ? 0 : 1].QuestOpened)
         {
-            GameHandlerScript.Instance.currentNode = null;
             questboardScripts[isLastBoardNumberOne ? 0 : 1].CloseQuestBoard();
         }
     }
 
-    public void OpenQuest(Quest interactedEvent)
+    public void OpenQuest(Quest interactedEvent, QuestNode quest)
     {
         curQuest = interactedEvent;
 
@@ -42,7 +41,7 @@ public class Event_Pages : MonoBehaviour
 
         questboardScripts[preIdx].CloseQuestBoard();
         questboardObjects[postIdx].transform.SetAsLastSibling();
-        questboardScripts[postIdx].SetRandomEvent(interactedEvent);
+        questboardScripts[postIdx].SetRandomEvent(interactedEvent, quest);
 
         isLastBoardNumberOne = !isLastBoardNumberOne;
     }

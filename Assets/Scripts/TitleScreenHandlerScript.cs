@@ -2,21 +2,28 @@ using UnityEngine;
 
 public class TitleScreenHandlerScript : MonoBehaviour
 {
+    public AudioClip clickSFX;
     public AudioManager audioManager;
     public GameObject canvas;
     
     public void StartGame()
     {
+        GetComponent<AudioSource>().clip = clickSFX;
+        GetComponent<AudioSource>().Play();
         audioManager.ChangeSceneWithFade("Main Scene");
     }
 
     public void Option()
     {
+        GetComponent<AudioSource>().clip = clickSFX;
+        GetComponent<AudioSource>().Play();
         canvas.SetActive(true);
     }
     
     public void QuitGame()
         {
+            GetComponent<AudioSource>().clip = clickSFX;
+            GetComponent<AudioSource>().Play();
             // This line closes the actual built application
             Application.Quit();
     
