@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,6 +46,16 @@ public class GameHandlerScript : MonoBehaviour
     
     public void DecisionMade(StatType[] statTypes, int[] amounts)
     {
+        if (amounts[0] == 0 && amounts[1] == 0 && amounts[2] == 0 && amounts[3] == 0)
+        {
+            List<int> numbers = new List<int>() { 0, 1, 2, 3 }; 
+            var picked = numbers.OrderBy(x => Random.value).Take(2).ToList();
+
+            statValues[picked[0]] += Random.Range(-10, 10);
+            statValues[picked[1]] += Random.Range(-10, 10);
+            return;
+        }
+
         for (int i = 0; i < statTypes.Length; i++)
             statValues[i] += amounts[i];
     }

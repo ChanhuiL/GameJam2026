@@ -302,10 +302,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -1043,10 +1085,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -1325,10 +1409,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -2863,10 +2989,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -2913,7 +3081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 58.5, y: 17.600006}
+  m_AnchoredPosition: {x: 58.5, y: 17.599976}
   m_SizeDelta: {x: 28.839996, y: -13.920013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002214230
@@ -3137,10 +3305,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -4666,6 +4876,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 721564606238381159, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_text
+      value: "\uAD73\uAC74\uC774\uB97C \uBBFF\uAE30"
+      objectReference: {fileID: 0}
+    - target: {fileID: 721564606238381159, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 721564606238381159, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1572910969682672351, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_Name
       value: Quest Board (1)
@@ -4686,6 +4908,18 @@ PrefabInstance:
       propertyPath: QuestEnterSFX
       value: 
       objectReference: {fileID: 8300000, guid: b18302d7494f7c040a20b3ce6029da50, type: 3}
+    - target: {fileID: 4422452430821392308, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_text
+      value: "\uAD73\uAC74\uC774\uB97C \uBBFF\uAE30"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422452430821392308, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422452430821392308, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4981242645263395483, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4693,6 +4927,14 @@ PrefabInstance:
     - target: {fileID: 4981242645263395483, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowAftermath
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786936377243250598, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_text
+      value: "\uAD6D\uAC00\uC758 \uBD80\uB984"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786936377243250598, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_fontSize
+      value: 33.95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4755,10 +4997,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -4950,10 +5234,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -5083,10 +5409,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -5141,10 +5509,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -5337,10 +5747,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -5822,7 +6274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.08}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -367.4001, y: -189.70004}
+  m_AnchoredPosition: {x: -367.4002, y: -189.70007}
   m_SizeDelta: {x: -465.86, y: -207.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2054214049
@@ -6235,10 +6687,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -6490,10 +6984,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestNodeSpawner
   questNodePrefab: {fileID: 2917796612002258790, guid: e907e499ed6a0554bbd4363b0fe84ca5, type: 3}
   randomQuests:
-  - {fileID: 11400000, guid: f626634ce8bcee74fa96d2aa605a9721, type: 2}
-  - {fileID: 11400000, guid: 69a449a14aa115d449f980780116b9a0, type: 2}
-  - {fileID: 11400000, guid: 570d13e93daf7f6459dbe0cbd479beff, type: 2}
-  - {fileID: 11400000, guid: 13a304665ece75842a8d268355c65cd9, type: 2}
+  - {fileID: 11400000, guid: 4d43afb0ff2ea3b49bd2874aa83638be, type: 2}
+  - {fileID: 11400000, guid: 505d38cfeb8de8145aa7caecfd7d1966, type: 2}
+  - {fileID: 11400000, guid: 69eb3fd1746091d4780c6507a76b880d, type: 2}
+  - {fileID: 11400000, guid: 76b0570f1ff82f249af07aa723945bd8, type: 2}
+  - {fileID: 11400000, guid: a9243bf01d8f82e4badd1590826447aa, type: 2}
+  - {fileID: 11400000, guid: 37bff27785c038e49804e587af6d45aa, type: 2}
+  - {fileID: 11400000, guid: b359b871e78c6ef4a96ea7aac8e9b4c8, type: 2}
+  - {fileID: 11400000, guid: 80970da54ee3a9149b011a78c84766a1, type: 2}
+  - {fileID: 11400000, guid: ae294a6d619e8aa4da347da00e1f4fdc, type: 2}
+  - {fileID: 11400000, guid: 2c9c001ab887a7c40bf164eb043aace9, type: 2}
+  - {fileID: 11400000, guid: bafece972040545498600d9955d9671e, type: 2}
+  - {fileID: 11400000, guid: 6f44ae870d694ed46872cc72bfe883a8, type: 2}
+  - {fileID: 11400000, guid: 2afabf326d38fa04d8dbb149af615fee, type: 2}
+  - {fileID: 11400000, guid: 193cb1281cfdb4d4eb3309c3581ec7b5, type: 2}
+  - {fileID: 11400000, guid: 27ccea271cf38894eaf7babc019c72ae, type: 2}
+  - {fileID: 11400000, guid: 223ff3ead38a3084e9459046df6ffafe, type: 2}
+  - {fileID: 11400000, guid: 6c1a456748ca8e14d83f9c8334bda57f, type: 2}
+  - {fileID: 11400000, guid: ad85af2a0b8beed43b6701b1492aab04, type: 2}
+  - {fileID: 11400000, guid: fdd4b472fe3539249a6e601b6ae053db, type: 2}
+  - {fileID: 11400000, guid: 46f039d97e69e6941bebd3d0d571469b, type: 2}
+  - {fileID: 11400000, guid: 866e40f346ee97b40b76fa3e731da4ea, type: 2}
+  - {fileID: 11400000, guid: 4eea9193c07e4c844a9e8d9eb0b4ac72, type: 2}
+  - {fileID: 11400000, guid: 3a16099abb205334d827869f0c34fe0e, type: 2}
+  - {fileID: 11400000, guid: ac9cd1e9157fc2c4695a83915333ee41, type: 2}
+  - {fileID: 11400000, guid: 9e6d92a4f005f7d43ac19adf73552905, type: 2}
+  - {fileID: 11400000, guid: 07ba1b399583a6745b01ed1488bc202b, type: 2}
+  - {fileID: 11400000, guid: 372a6c1142b2c0a4e9d1f72618298849, type: 2}
+  - {fileID: 11400000, guid: 9e469369d702099458c8691e7cb98832, type: 2}
+  - {fileID: 11400000, guid: 5d1821a6d1f80dc43ab5c6e8ece856ab, type: 2}
+  - {fileID: 11400000, guid: 68632c37ff870464eb66c428ccda5df1, type: 2}
+  - {fileID: 11400000, guid: 67974d2cbd1c3f9469fb3cfc37654717, type: 2}
+  - {fileID: 11400000, guid: eca985c1b98fda846a4d016d96ac7f2a, type: 2}
+  - {fileID: 11400000, guid: eb60933cd79b00f4c9fc0b16f6da66fa, type: 2}
+  - {fileID: 11400000, guid: 8cd93361b5f0d2a45b99c853e1c653b3, type: 2}
+  - {fileID: 11400000, guid: 64359cbfe6d35294696042646c1e714b, type: 2}
+  - {fileID: 11400000, guid: fbb0c0c3a0393904e84a20ecc6143c64, type: 2}
+  - {fileID: 11400000, guid: 144471646e5efdf4a9e2f8883c69f265, type: 2}
+  - {fileID: 11400000, guid: 9012dd887b0c45546a03421d4949dc43, type: 2}
+  - {fileID: 11400000, guid: 1771f65592011ca408d24a061718dfb1, type: 2}
+  - {fileID: 11400000, guid: 96b49934a8d70ec449392e461f4cb9c6, type: 2}
+  - {fileID: 11400000, guid: 46de56f0fe6d029419ccb0fcc1782ecd, type: 2}
+  - {fileID: 11400000, guid: e0bcd0d2a21933b41a8e298303981b1e, type: 2}
+  - {fileID: 11400000, guid: 72c3d4927e75c484daef47c75036ee64, type: 2}
+  - {fileID: 11400000, guid: f6869b8e17b66b7439e07cfc50e34e04, type: 2}
+  - {fileID: 11400000, guid: 0e0bdf29f09e7234c8c7fb7d533cec77, type: 2}
+  - {fileID: 11400000, guid: 5cb60175037dbd4408feac66e331aef9, type: 2}
   eventQuests: []
   spawnRange: 0
   spawnDegree: 0
@@ -6608,6 +7144,10 @@ PrefabInstance:
     - target: {fileID: 1572910969682672351, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_Name
       value: Quest Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572910969682672351, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1667025281029907162, guid: b573cc80448c7be4698030feb2f17c3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

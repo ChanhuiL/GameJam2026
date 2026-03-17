@@ -25,6 +25,14 @@ public class QuestNodeSpawner : MonoBehaviour
 
     private void Awake()
     {
+        for (int i = 35; i < 40; ++i)
+            randomQuests[i].rarity = Quest.QuestRarity.UNCOMMON;
+        for (int i = 41; i < randomQuests.Count; ++i)
+            randomQuests[i].rarity = Quest.QuestRarity.RARE;
+
+        foreach(Quest quest in randomQuests)
+            quest.questType = (Quest.QuestType)(Random.Range(0, 4));
+
         spawnRange = Random.Range(radiusRange.x, radiusRange.y);
         spawnDegree = Random.Range(degreeRange.x, degreeRange.y);
         spawnCooldown = Random.Range(cooldownRange.x, cooldownRange.y);
